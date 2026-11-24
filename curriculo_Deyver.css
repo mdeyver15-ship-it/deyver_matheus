@@ -1,0 +1,352 @@
+/* ========================================
+   FONTES
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
+
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.margem {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 30px;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+h1 {
+    border: 2px solid #00008A;
+    margin: -30px -30px 30px -30px;
+    color: white;
+    background-color: #00008A;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+/* ========================================
+   FOTO DE PERFIL
+======================================== */
+
+.foto {
+    display: block;
+    width: 300px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ========================================
+   MENU DE NAVEGAÇÃO
+======================================== */
+
+nav {
+    background-color: #00008A;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    font-family: "Inter", sans-serif;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.15);
+}
+
+
+/* ========================================
+   CONTEÚDO PRINCIPAL
+======================================== */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+#sobre,
+#objetivo {
+    grid-column: 1 / -1;
+}
+
+
+/* ========================================
+   CAIXAS DE CONTEÚDO
+======================================== */
+
+.caixa {
+    background-color: #F5F8FF;
+    border: 1px solid #00008A;
+    transition: transform 0.3s, box-shadow 0.3s;
+    scroll-margin-top: 80px;
+}
+
+.caixa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
+}
+
+
+/* TÍTULOS DAS CAIXAS */
+
+.caixa h2 {
+    background-color: #00008A;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 7px 12px;
+    transition: background-color 0.3s;
+}
+
+.caixa:hover h2 {
+    background-color: #2525A8;
+}
+
+.caixa:target h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+
+/* ========================================
+   SEÇÃO SOBRE MIM
+======================================== */
+
+.sobre {
+    background-color: #F5F8FF;
+    border: 1px solid #00008A;
+    transition: transform 0.3s, box-shadow 0.3s;
+    scroll-margin-top: 80px;
+    text-align: center;
+}
+
+.sobre:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
+}
+
+.sobre h2 {
+    background-color: #00008A;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 7px 12px;
+    transition: background-color 0.3s;
+}
+
+.sobre:hover h2 {
+    background-color: #2525A8;
+}
+
+.sobre p {
+    margin: 15px 20px;
+    text-align: center;
+}
+
+.sobre:target h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+
+/* ========================================
+   TEXTOS E TÍTULOS GERAIS
+======================================== */
+
+h2 {
+    border-bottom: 1px solid #00008A;
+    padding-bottom: 4px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.caixa ul,
+.caixa p {
+    margin: 15px 20px;
+}
+
+.destaque {
+    text-align: center;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    margin-top: 25px;
+}
+
+
+/* ========================================
+   FORMULÁRIO DE CONTATO
+======================================== */
+
+/* Título do formulário */
+
+#contato h3 {
+    margin: 25px 20px 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+}
+
+
+/* Área do formulário */
+
+#contato form {
+    margin: 0 20px 30px;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Espaçamento entre os campos */
+
+#contato form p {
+    margin: 0 0 18px;
+}
+
+
+/* Identificação dos campos */
+
+#contato label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #00008A;
+}
+
+
+/* Campos de texto e mensagem */
+
+#contato input,
+#contato textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00008A;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #222222;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+
+/* Destaque ao selecionar um campo */
+
+#contato input:focus,
+#contato textarea:focus {
+    outline: 2px solid #2525A8;
+    outline-offset: 2px;
+}
+
+
+/* Permite redimensionar a mensagem */
+
+#contato textarea {
+    resize: vertical;
+}
+
+
+/* Botão de envio */
+
+#contato button {
+    margin-bottom: 10px;
+    padding: 10px 18px;
+    border: 1px solid #00008A;
+    border-radius: 5px;
+    background-color: #00008A;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contato button:hover {
+    background-color: #2525A8;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE PARA CELULARES
+======================================== */
+
+@media (max-width: 700px) {
+
+    .margem {
+        margin: 5px;
+        padding: 15px;
+    }
+
+    h1 {
+        margin: -15px -15px 20px -15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #sobre,
+    #objetivo {
+        grid-column: auto;
+    }
+
+    nav a {
+        margin: 5px;
+        padding: 8px;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .foto img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
